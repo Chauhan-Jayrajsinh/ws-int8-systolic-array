@@ -9,36 +9,37 @@
 
 ## Figure Naming Convention
 
-Format:
+**Format:**
 
-FIG_<Chapter>_<Sequence>_<Short_Description>.png
+`FIG_<Chapter>_<Sequence>_<Short_Description>.png`
 
-Example:
+**Example:**
 
-FIG_03_01_PE_Architecture.png
+`FIG_03_01_PE_Architecture.png`
 
-Rules:
+**Rules:**
+
 - Use sequential numbering within each chapter.
 - Use short, descriptive names.
-- Do not use "final", "final2", "new", or date-based names.
+- Do not use `final`, `final2`, `new`, or date-based names.
 - Preserve original verification evidence separately.
-- Only approved report figures receive FIG_ naming.
+- Only approved report figures receive `FIG_` naming.
 
 ---
 
 ## Figure Register
 
-+------+-------------------+-----------------+-------------+---------+----------------+--------+
-| ID   | Report Figure No. | Source Evidence | Description | Chapter | Purpose        | Status |
-+------+-------------------+-----------------+-------------+---------+----------------+--------+
-| F01  | —                 | —               | —           | —       | —              | ⬜     |
-+------+-------------------+-----------------+-------------+---------+----------------+--------+
+| ID | Report Figure No. | Source Evidence | Description | Chapter | Purpose | Status |
+|:---|:---:|:---|:---|:---:|:---|:---:|
+| F01 | — | — | — | — | — | ⬜ Candidate |
 
 ---
 
 ## Status Legend
 
-- ⬜ Candidate
-- 🔄 Being prepared
-- ✅ Approved for report
-- ❌ Rejected / not required
+| Status | Meaning |
+|:---:|:---|
+| ⬜ | Candidate |
+| 🔄 | Being prepared |
+| ✅ | Approved for report |
+| ❌ | Rejected / not required |
