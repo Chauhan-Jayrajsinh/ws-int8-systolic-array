@@ -10,8 +10,9 @@ sim_pe_row
 sim_processing_element
 a.out
 
-# Verilator generated files
-obj_dir/
+# Verilator generated build directories
+**/obj_dir/
+**/obj_dir_row/
 
 # Temporary/generated waveform directories
 waves/
