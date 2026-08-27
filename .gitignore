@@ -1,0 +1,41 @@
+# Simulation waveforms
+*.vcd
+*.fst
+*.lxt
+*.lxt2
+
+# Compiled simulation outputs
+sim.out
+sim_pe_row
+sim_processing_element
+a.out
+
+# Verilator generated files
+obj_dir/
+
+# Temporary/generated waveform directories
+waves/
+
+# Yosys generated/build artifacts
+yosys/
+
+# Generated graph/visualization files
+*.dot
+*.svg
+
+# Editor / IDE
+.vscode/
+
+# Temporary files
+*.swp
+*~
+
+# Generated Yosys synthesis RTL
+sim/pe_synth.v
+
+# Windows metadata
+*:Zone.Identifier
+desktop.ini
+
+# Verilator generated row build
+sim/obj_dir_row/
