@@ -1,0 +1,36 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Mon Aug 31 14:45:27 2026
+[*]
+[dumpfile] "/home/jayrajsinh_chauhan/systolic-array/dump_systolic_array.vcd"
+[dumpfile_mtime] "Mon Aug 31 14:35:04 2026"
+[dumpfile_size] 27960
+[savefile] "/home/jayrajsinh_chauhan/systolic-array/docs/verification/Systolic Array/systolic_array_waveform.gtkw"
+[timestart] 8664
+[size] 1908 987
+[pos] -206 -90
+*-13.402283 -1 35000 45000 55000 65000 75000 86000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 42
+[signals_width] 336
+[sst_expanded] 0
+[sst_vpaned_height] 288
+@420
+tb_systolic_array.clk
+[color] 2
+tb_systolic_array.rst_n
+tb_systolic_array.load_compute_sel
+[color] 5
+tb_systolic_array.activation_in[7:0]
+tb_systolic_array.weight_in_flat[31:0]
+[color] 1
+tb_systolic_array.overflow_flag_flat[1:0]
+[color] 6
+tb_systolic_array.row0_psum_view[19:0]
+[color] 7
+tb_systolic_array.row1_psum_view[19:0]
+tb_systolic_array.row0_valid_time[63:0]
+tb_systolic_array.row1_valid_time[63:0]
+[color] 3
+tb_systolic_array.tests
+[pattern_trace] 1
+[pattern_trace] 0

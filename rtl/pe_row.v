@@ -26,8 +26,10 @@ module pe_row #(
     input  signed [DATA_WIDTH-1:0]          activation_in,
     input  signed [NUM_PE*DATA_WIDTH-1:0]   weight_in_flat,
     output signed [ACC_WIDTH-1:0]           psum_out,
-    output                                  overflow_flag
+    output                                  overflow_flag,
+    output signed [DATA_WIDTH-1:0]          activation_out
 );
+
 
     // ------------------------------------------------------------------
     // TODO 1: Declare whatever internal wires you need to:
@@ -48,7 +50,7 @@ module pe_row #(
     /* verilator lint_off UNUSEDSIGNAL */
     wire signed [DATA_WIDTH-1:0] pe_activation_out [0:NUM_PE-1];
     /* verilator lint_on UNUSEDSIGNAL */
-    
+
 
     // ------------------------------------------------------------------
     // TODO 2: generate block instantiating NUM_PE copies of processing_element.
@@ -77,7 +79,7 @@ module pe_row #(
           .clk(clk),
           .rst_n(rst_n),
           .load_compute_sel(load_compute_sel),
-          .activation_in(activation_in), 
+          .activation_in(activation_in),
           .weight_in(weight_in_flat[DATA_WIDTH*(i+1)-1:DATA_WIDTH*i]),
           .psum_in(psum_chain[i]),
           .activation_out(pe_activation_out[i]),
@@ -100,5 +102,6 @@ module pe_row #(
 
     assign psum_out = psum_chain[NUM_PE];
     assign overflow_flag = |pe_overflow;
+    assign activation_out = pe_activation_out[0];
 
 endmodule

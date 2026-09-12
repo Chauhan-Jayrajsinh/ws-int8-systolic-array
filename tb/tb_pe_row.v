@@ -28,6 +28,9 @@ module tb_pe_row;
     reg  signed [NUM_PE*DATA_WIDTH-1:0]  weight_in_flat;
     wire signed [ACC_WIDTH-1:0]          psum_out;
     wire                                 overflow_flag;
+    /* verilator lint_off UNUSEDSIGNAL */
+    wire signed [DATA_WIDTH-1:0] activation_out;
+    /* verilator lint_on UNUSEDSIGNAL */
 
     integer tests  = 0;
     integer passed = 0;
@@ -44,7 +47,8 @@ module tb_pe_row;
         .activation_in(activation_in),
         .weight_in_flat(weight_in_flat),
         .psum_out(psum_out),
-        .overflow_flag(overflow_flag)
+        .overflow_flag(overflow_flag),
+        .activation_out(activation_out)
     );
 
     

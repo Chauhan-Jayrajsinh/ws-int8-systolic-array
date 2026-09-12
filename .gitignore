@@ -8,6 +8,8 @@
 sim.out
 sim_pe_row
 sim_processing_element
+sim_systolic_array
+sim/
 a.out
 
 # Verilator generated build directories
