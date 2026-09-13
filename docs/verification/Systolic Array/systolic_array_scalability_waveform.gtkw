@@ -1,0 +1,40 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Sat Sep 12 19:11:57 2026
+[*]
+[dumpfile] "/home/jayrajsinh_chauhan/systolic-array/dump_systolic_array.vcd"
+[dumpfile_mtime] "Sat Sep 12 17:48:29 2026"
+[dumpfile_size] 23623
+[savefile] "/home/jayrajsinh_chauhan/systolic-array/docs/verification/Systolic Array/systolic_array_scalability_waveform.gtkw"
+[timestart] 214320
+[size] 1908 1200
+[pos] 32767 32767
+*-13.176126 -1 234960 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb_systolic_array.
+[treeopen] tb_systolic_array.dut_scale.
+[treeopen] tb_systolic_array.dut_scale.row_inst[0].
+[treeopen] tb_systolic_array.dut_scale.row_inst[0].row.
+[treeopen] tb_systolic_array.dut_scale.row_inst[1].
+[treeopen] tb_systolic_array.dut_scale.row_inst[1].row.pe_inst[0].
+[treeopen] tb_systolic_array.dut_scale.row_inst[1].row.pe_inst[1].
+[treeopen] tb_systolic_array.dut_scale.row_inst[2].
+[treeopen] tb_systolic_array.dut_scale.row_inst[2].row.pe_inst[0].
+[treeopen] tb_systolic_array.dut_scale.row_inst[2].row.pe_inst[1].
+[sst_width] 42
+[signals_width] 269
+[sst_expanded] 0
+[sst_vpaned_height] 292
+@420
+tb_systolic_array.clk
+[color] 5
+tb_systolic_array.load_compute_sel
+[color] 7
+tb_systolic_array.activation_in[7:0]
+[color] 3
++{Row0_psum} tb_systolic_array.dut_scale.row_inst[0].row.psum_out[19:0]
+[color] 2
++{Row1_psum} tb_systolic_array.dut_scale.row_inst[1].row.psum_out[19:0]
+[color] 1
++{Row2_psum} tb_systolic_array.dut_scale.row_inst[2].row.psum_out[19:0]
+[pattern_trace] 1
+[pattern_trace] 0
