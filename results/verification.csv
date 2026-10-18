@@ -1,0 +1,6 @@
+date,component,verification_method,passed,failed,status,notes
+2026-10-18,processing_element,directed_RTL,49,0,PASS,"Previously recorded result"
+2026-10-18,pe_row,directed_RTL,28,0,PASS,"Previously recorded result"
+2026-10-18,systolic_array,directed_RTL,22,0,PASS,"Previously recorded result"
+2026-10-18,systolic_array,Cocotb_regression,5,0,PASS,"Previously recorded separate regression"
+2026-10-18,INT8_software_reference,Python_checks,,,PASS,"All reference checks passed; see software/test_int_ref.py"

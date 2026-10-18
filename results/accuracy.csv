@@ -1,0 +1,4 @@
+experiment,model,dataset,samples,correct,accuracy_percent,validation_type,notes
+2026-10-18,float_mlp,digits_test,540,,96.1111,software_model,Training script reported 96.11 percent
+2026-10-18,int8_mlp,digits_test,540,,96.30,software_model,Training script reported 96.30 percent; shift1=10; shift2=7
+2026-10-18,int8_mlp,exported_test_vectors,256,246,96.09375,software_reference,Python golden-model and exported-output consistency checks passed
