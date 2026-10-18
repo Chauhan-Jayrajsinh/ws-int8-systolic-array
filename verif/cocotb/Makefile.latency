@@ -1,0 +1,33 @@
+# Makefile.latency -- latency experiment only. Does not touch Makefile.
+# Usage: make -f Makefile.latency NUM_ROWS=2 NUM_PE=2 STREAM_N=8 [SIM=icarus]
+
+SIM ?= verilator
+TOPLEVEL_LANG ?= verilog
+
+NUM_ROWS ?= 2
+NUM_PE   ?= 2
+STREAM_N ?= 8
+export LAT_R := $(NUM_ROWS)
+export LAT_C := $(NUM_PE)
+export LAT_N := $(STREAM_N)
+
+# same layout assumption as your existing Makefile (this file sits next to it)
+PROJECT_ROOT := $(abspath $(dir $(lastword $(MAKEFILE_LIST)))/../..)
+
+VERILOG_SOURCES += $(PROJECT_ROOT)/rtl/processing_element.v
+VERILOG_SOURCES += $(PROJECT_ROOT)/rtl/pe_row.v
+VERILOG_SOURCES += $(PROJECT_ROOT)/rtl/systolic_array.v
+
+SIM_BUILD = sim_build_lat_$(SIM)_R$(NUM_ROWS)_C$(NUM_PE)
+COCOTB_RESULTS_FILE = results_lat_$(SIM)_R$(NUM_ROWS)_C$(NUM_PE).xml
+
+ifeq ($(SIM),icarus)
+COMPILE_ARGS += -P systolic_array.NUM_PE=$(NUM_PE) -P systolic_array.NUM_ROWS=$(NUM_ROWS)
+else
+COMPILE_ARGS += -GNUM_PE=$(NUM_PE) -GNUM_ROWS=$(NUM_ROWS)
+endif
+
+TOPLEVEL = systolic_array
+MODULE = test_latency
+
+include $(shell cocotb-config --makefiles)/Makefile.sim

@@ -221,10 +221,8 @@ endtask
         rst_n = 1'b0;
         #1;
 
-        if (psum_out !== 0 || overflow_flag !== 1'b0)
-            $display("FAIL Reset state");
-        else
-            $display("PASS Reset state");
+        report_case("Reset state",
+            (psum_out !== 0 || overflow_flag !== 1'b0));
         
         // Release reset
         rst_n = 1'b1;

@@ -1,0 +1,5 @@
+R,C,N,n,first_valid_edges,last_valid_edges,drain_edges_measured,drain_edges_predicted,scalar_cycles_model,ratio_vs_scalar_model,utilization_pct
+2,2,8,7,2|3,8|9,9,9,28,3.11,77.8
+3,2,8,7,2|3|4,8|9|10,10,10,42,4.20,70.0
+2,3,8,6,3|4,8|9,9,9,36,4.00,66.7
+3,3,8,6,3|4|5,8|9|10,10,10,54,5.40,60.0

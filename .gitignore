@@ -42,3 +42,15 @@ desktop.ini
 
 # Verilator generated row build
 sim/obj_dir_row/
+# Python virtual environments
+.venv/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Cocotb and simulator build outputs
+sim_build*/
+verif/cocotb/sim_build*/
+*.vcd
+*.fst
