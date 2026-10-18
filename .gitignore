@@ -54,3 +54,6 @@ sim_build*/
 verif/cocotb/sim_build*/
 *.vcd
 *.fst
+
+# Generated Cocotb test result reports
+verif/cocotb/results*.xml
